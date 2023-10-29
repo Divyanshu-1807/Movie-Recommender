@@ -69,10 +69,14 @@ if st.button('Recommend'):
        st.image(poster[0],width=80)
        st.caption(':star::star::star::star:')
 
-    with col2:
        st.write(f':white[{name[1]}]')
        st.image(poster[1],width=80)
        st.caption(':star::star::star:')
+    
+    #with col2:
+    #   st.write(f':white[{name[1]}]')
+    #   st.image(poster[1],width=80)
+    #   st.caption(':star::star::star:')
 
     with col3:
        st.write(f':white[{name[2]}]')
