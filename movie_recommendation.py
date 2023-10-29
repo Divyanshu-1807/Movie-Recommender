@@ -66,32 +66,32 @@ if st.button('Recommend'):
 
     with col1:
        st.write(f':white[{name[0]}]')
-       st.image(poster[0],width=80)
+       st.image(poster[0],width=150)
        st.caption(':star::star::star::star:')
         
     with col2:
        st.write(f':white[{name[1]}]')
-       st.image(poster[1],width=80)
+       st.image(poster[1],width=150)
        st.caption(':star::star::star:')
 
     with col3:
        st.write(f':white[{name[2]}]')
-       st.image(poster[2],width=80)
+       st.image(poster[2],width=150)
        st.caption(':star::star::star:')
 
     with col4:
        st.write(f':white[{name[3]}]')
-       st.image(poster[3],width=80)
+       st.image(poster[3],width=150)
        st.caption(':star::star::star::star:')
 
     with col5:
        st.write(f':white[{name[4]}]')
-       st.image(poster[4],width=80)
+       st.image(poster[4],width=150)
        st.caption(':star::star::star:')
 
     with col6:
        st.write(f':white[{name[5]}]')
-       st.image(poster[5],width=80)
+       st.image(poster[5],width=150)
        st.caption(':star::star::star::star:')
     
     
