@@ -3,7 +3,17 @@ import streamlit as st
 import pandas as pd
 import requests
 import base64
+import zipfile
 
+#Name of the archieve file
+zip_archive = 'similarity.zip'
+
+with zipfile.ZipFile(zip_archive, 'r') as zipf:
+    # Extract the model file
+    with zipf.open('similarity.pkl') as f:
+        # Load the model from the extracted file
+        similarity = pickle.load(f)
+        
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
@@ -25,7 +35,7 @@ set_background('recommen.png')
 
 movie_dict=pickle.load(open('movie_dict.pkl','rb'))
 movie=pd.DataFrame(movie_dict)
-similarity=pickle.load(open('similarity.pkl','rb'))
+#similarity=pickle.load(open('similarity.pkl','rb'))
 
 def fetch_poster(movie_id):
     data=requests.get(f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=28953f9f8e1af380611b54d0427c1d95")
