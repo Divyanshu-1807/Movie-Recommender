@@ -62,36 +62,36 @@ movie_selected = st.selectbox(
 if st.button('Recommend'):
     name,poster=recommend(movie_selected)
     
-    col1, col2, col3 , col4, col5 ,col6= st.columns(spec=6,gap="large")
+    col1, col2, col3 , col4, col5 ,col6= st.columns(spec=6,gap="medium")
 
     with col1:
        st.write(f':white[{name[0]}]')
-       st.image(poster[0],width=110)
+       st.image(poster[0],width=80)
        st.caption(':star::star::star::star:')
 
     with col2:
        st.write(f':white[{name[1]}]')
-       st.image(poster[1],width=110)
+       st.image(poster[1],width=80)
        st.caption(':star::star::star:')
 
     with col3:
        st.write(f':white[{name[2]}]')
-       st.image(poster[2],width=110)
+       st.image(poster[2],width=80)
        st.caption(':star::star::star:')
 
     with col4:
        st.write(f':white[{name[3]}]')
-       st.image(poster[3],width=110)
+       st.image(poster[3],width=80)
        st.caption(':star::star::star::star:')
 
     with col5:
        st.write(f':white[{name[4]}]')
-       st.image(poster[4],width=110)
+       st.image(poster[4],width=80)
        st.caption(':star::star::star:')
 
     with col6:
        st.write(f':white[{name[5]}]')
-       st.image(poster[5],width=110)
+       st.image(poster[5],width=80)
        st.caption(':star::star::star::star:')
     
     
