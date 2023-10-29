@@ -62,7 +62,7 @@ movie_selected = st.selectbox(
 if st.button('Recommend'):
     name,poster=recommend(movie_selected)
     
-    col1, col2, col3 , col4, col5 ,col6= st.columns(spec=6,gap="large")
+    col1, col2, col3 , col4, col5 ,col6= st.columns(spec=6,gap="small")
 
     with col1:
        st.write(f':white[{name[0]}]')
