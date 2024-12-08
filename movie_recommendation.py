@@ -65,7 +65,7 @@ if st.button('Recommend'):
     col1, col2, col3 , col4, col5 ,col6= st.columns(spec=6,gap="small")
 
     with col1:
-       st.write(f':white[{name[0]}]')
+       st.write(f'[{name[0]}]')
        st.image(poster[0],width=180)
        st.caption(':star::star::star::star:')
        st.write(f':white[{name[1]}]')
