@@ -65,10 +65,10 @@ if st.button('Recommend'):
     col1, col2, col3 , col4, col5 ,col6= st.columns(spec=6,gap="small")
 
     with col1:
-       st.write(f'[{name[0]}]')
+       st.write(f'{name[0]}')
        st.image(poster[0],width=180)
        st.caption(':star::star::star::star:')
-       st.write(f':white[{name[1]}]')
+       st.write(f'{name[1]}')
        st.image(poster[1],width=180)
        st.caption(':star::star::star:')
         
@@ -78,10 +78,10 @@ if st.button('Recommend'):
     #   st.caption(':star::star::star:')
 
     with col3:
-       st.write(f':white[{name[2]}]')
+       st.write(f'{name[2]}')
        st.image(poster[2],width=180)
        st.caption(':star::star::star:')
-       st.write(f':white[{name[3]}]')
+       st.write(f'{name[3]}')
        st.image(poster[3],width=180)
        st.caption(':star::star::star::star:')
     
@@ -91,10 +91,10 @@ if st.button('Recommend'):
     #   st.caption(':star::star::star::star:')
 
     with col5:
-       st.write(f':white[{name[4]}]')
+       st.write(f'{name[4]}')
        st.image(poster[4],width=180)
        st.caption(':star::star::star:')
-       st.write(f':white[{name[5]}]')
+       st.write(f'{name[5]}')
        st.image(poster[5],width=180)
        st.caption(':star::star::star::star:') 
     
