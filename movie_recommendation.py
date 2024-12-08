@@ -52,7 +52,7 @@ def recommend(obj):
         recommend_poster.append(fetch_poster(movie.iloc[i[0]].id))
     return recommendation,recommend_poster
 
-st.title(':white[Movie Recommendation]')
+st.title('Movie Recommendation')
 
 movie_selected = st.selectbox(
     'Enter the movie',
