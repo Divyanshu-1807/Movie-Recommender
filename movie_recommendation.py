@@ -52,7 +52,7 @@ def recommend(obj):
         recommend_poster.append(fetch_poster(movie.iloc[i[0]].id))
     return recommendation,recommend_poster
 
-st.markdown("<h1 style='color:white;font-size:24px;'>Movie Recommendation</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color:white;font-size:36px;'>Movie Recommendation</h1>", unsafe_allow_html=True)
 
 movie_selected = st.selectbox(
     'Enter the movie',
